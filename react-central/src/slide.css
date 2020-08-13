@@ -1,0 +1,15 @@
+
+.containerSlide{
+    float:center ;
+    width: 600px;
+    height:600px;
+    margin:auto;
+    justify-content: center;
+    padding-top:50px;
+}
+
+.containerSlide img{
+    float: center;
+    height: 780px;
+    width: 500px;
+}

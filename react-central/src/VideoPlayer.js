@@ -4,7 +4,11 @@ import ReactPlayer from 'react-player';
 function VideoPlayer(){
 
     return(
-        <ReactPlayer url="https://www.youtube.com/watch?v=9JZHodNR184"/>
+        
+        <ReactPlayer 
+        width='760px'
+        height='380px'
+        url="https://www.youtube.com/watch?v=9JZHodNR184"/>
     )
 }
 

@@ -5,6 +5,7 @@ import VideoPlayer from './VideoPlayer';
 import Navbar from './NavBar';
 import Home from './Home';
 import './App.css';
+import './slide.css';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 
 function App() {
