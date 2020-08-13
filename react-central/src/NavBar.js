@@ -18,10 +18,6 @@ function Navbar(){
             <li>Slide</li>
             </NavLink>
 
-            <NavLink  to="/todo">
-            <li>Todolist</li>
-            </NavLink>
-
             <NavLink  to="/video">
             <li>VideoPlayer</li>
             </NavLink>
