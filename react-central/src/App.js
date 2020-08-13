@@ -6,7 +6,7 @@ import VideoPlayer from './VideoPlayer';
 import Navbar from './NavBar';
 import Home from './Home';
 import './App.css';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 
 function App() {
   return (
@@ -14,11 +14,16 @@ function App() {
       
       <Router>
         <Navbar/>
-        <Route path="/" exact component={Home} />
-        <Route path="/calendar" exact component={Calendar} />
-        <Route path="/slide" exact component={Slide} />
-        <Route path="/todo" exact component={Todolist} />
-        <Route path="/video" exact component={VideoPlayer} />
+
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/calendar" component={Calendar} />
+            <Route path="/slide"  component={Slide} />
+            <Route path="/todo"  component={Todolist} />
+            <Route path="/video"  component={VideoPlayer} />
+            <Route path="/"  component={() => <div>ERREUR 404</div>} />
+          </Switch>
+        
       </Router>
     </div>
   );
