@@ -1,30 +1,30 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './Style.css';
 
 function Navbar(){
 
     return (
         <ul>
-            <Link to="/">
+            <NavLink to="/">
             <li>Home</li>
-            </Link>
+            </NavLink>
 
-            <Link to="/calendar">
+            <NavLink  to="/calendar">
             <li>Calendar</li>
-            </Link>
+            </NavLink>
 
-            <Link to="/slide">
+            <NavLink  to="/slide">
             <li>Slide</li>
-            </Link>
+            </NavLink>
 
-            <Link to="/todo">
+            <NavLink  to="/todo">
             <li>Todolist</li>
-            </Link>
+            </NavLink>
 
-            <Link to="/video">
+            <NavLink  to="/video">
             <li>VideoPlayer</li>
-            </Link>
+            </NavLink>
         </ul>
     )
 }
