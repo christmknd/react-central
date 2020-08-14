@@ -3,7 +3,9 @@ import React from 'react'
 function Home(){
 
     return(
-        <h1>Home</h1>
+        <h1 style={{textAlign: "center"}} >
+            Bienvenue sur <strong>REACT CENTRAL</strong>
+        </h1>
     )
 }
 

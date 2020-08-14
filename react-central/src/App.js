@@ -1,13 +1,21 @@
+//React
 import React from 'react';
+
+//Composants
 import Calendar from './Calendar';
 import Slide from './Slide';
 import VideoPlayer from './VideoPlayer';
 import Navbar from './NavBar';
 import Home from './Home';
+
+//CSS
 import './App.css';
 import './slide.css';
+import './videoplayer.css'
+import './calendar.css';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 
+//Composant Racine
 function App() {
   return (
     <div className="App">
