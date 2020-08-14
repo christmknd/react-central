@@ -1,9 +1,9 @@
 import React from 'react';
 import {Slide} from 'react-slideshow-image';
-import img1 from './img/img1.jpg';
-import img2 from './img/img2.jpg';
-import img3 from './img/img3.png';
-import './slide.css'
+import img1 from '../img/img1.jpg';
+import img2 from '../img/img2.jpg';
+import img3 from '../img/img3.png';
+import '../stylesheets/slide.css';
 import 'react-slideshow-image/dist/styles.css';
 
 

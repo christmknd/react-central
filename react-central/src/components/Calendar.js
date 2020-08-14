@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './calendar.css';
+import '../stylesheets/calendar.css';
 
 function Calendar(){
 
