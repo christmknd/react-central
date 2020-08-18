@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {Slide} from 'react-slideshow-image';
 import img1 from '../img/img1.jpg';
 import img2 from '../img/img2.jpg';
@@ -7,17 +7,21 @@ import '../stylesheets/slide.css';
 import 'react-slideshow-image/dist/styles.css';
 
 
-const properties ={
-    duration:4000,
-    transirionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows:true
-}
+class Slideshow extends Component {
 
-const Slideshow = () => {
-    return (
-        <div className="containerSlide">
+    render() {
+
+        const properties ={
+            duration:4000,
+            transirionDuration: 500,
+            infinite: true,
+            indicators: true,
+            arrows:true
+        }
+
+        return (
+
+            <div className="containerSlide">
             <Slide { ...properties}>
                 <div className="each-slide">
                     <div>
@@ -36,10 +40,11 @@ const Slideshow = () => {
                 </div>
             </Slide>
         </div>
-    )
+
+        )
+    }
 }
 
 
 
-
-export default Slideshow;
+export default Slideshow ;
